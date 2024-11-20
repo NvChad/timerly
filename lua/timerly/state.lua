@@ -15,7 +15,9 @@ local M = {
     on_finish = function()
       vim.notify "Timerly: time's up!"
     end,
-    mapping = nil, -- is func
+    mapping = nil,         -- is func
+    style = "default",     -- potential values are: default, compact
+    position = "top-right" -- potential values are: center, top-right
   },
 
   status = "", -- or pause
